@@ -303,7 +303,6 @@
 				8820D19923171E2000697A34 /* Sources */,
 				8820D19A23171E2000697A34 /* Frameworks */,
 				8820D19B23171E2000697A34 /* Resources */,
-				5019957B23355CCF00185F42 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -422,26 +421,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5019957B23355CCF00185F42 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${INFOPLIST_FILE}\");\nbuildNumber=$(($buildNumber + 1));\n/usr/libexec/PlistBuddy -c \"Set CFBundleVersion $buildNumber\" \"${INFOPLIST_FILE}\";\n\nsh /Users/brandonplank/Desktop/Projects/rootlessJB4/unSignIPA.sh\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8820D19923171E2000697A34 /* Sources */ = {
@@ -633,7 +612,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W7J462TP2V;
+				DEVELOPMENT_TEAM = 37585JQ2S3;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/rootlessJB4/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -652,7 +631,7 @@
 					"-w",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bp.rootlessJB;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mp.RootlessJB4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -663,7 +642,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W7J462TP2V;
+				DEVELOPMENT_TEAM = 37585JQ2S3;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/rootlessJB4/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -682,7 +661,7 @@
 					"-w",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bp.rootlessJB;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mp.RootlessJB4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
